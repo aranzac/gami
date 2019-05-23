@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const config = require('./DB.js');
 const postRoute = require('./post.route');
 const serveStatic = require("serve-static")
+const path = require("path");
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
