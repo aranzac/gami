@@ -4,11 +4,16 @@
   "private": true,
   "scripts": {
     "postinstall": "npm run build",
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run base\"",
+    "start": "run api/server.js",
     "base": "node api/server.js",
     "serve": "vue-cli-service serve",
+    "exe": "node ",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+  },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.4.1"
   },
   "dependencies": {
     "axios": "^0.18.0",
