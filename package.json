@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "npm  build",
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run base\"",    "base": "node api/server.js",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run base\"",
+    "base": "node api/server.js",
     "serve": "vue-cli-service serve",
     "exe": "node ",
     "build": "vue-cli-service build",
@@ -21,22 +22,22 @@
   ],
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
-    "vue": "^2.5.17",
+    "vue": "^2.6.10",
     "vue-axios": "^2.1.4",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
     "express": "^4.17.0",
     "serve-static": "^1.14.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
